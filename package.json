@@ -1,0 +1,26 @@
+{
+  "name": "array_rand",
+  "version": "1.0.0",
+  "description": "Returns the specified number of random elements from the array.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technofinder/array_rand.git"
+  },
+  "keywords": [
+    "random",
+    "array",
+    "array_random",
+    "array_rand",
+    "randomise"
+  ],
+  "author": "Venkata Krishna <vkvenkat94@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/technofinder/array_rand/issues"
+  },
+  "homepage": "https://github.com/technofinder/array_rand#readme"
+}
