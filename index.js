@@ -3,7 +3,7 @@ var exporter = {}
 var chooseRandomNumer = function(startindex, endIndex){
   return Math.floor(Math.random() * (startindex - endIndex)) + endIndex;
 }
-// Can we use an object instead of startindex and max index???
+
 exporter.getRandomNumberInRangeSync = function(array, count, startIndex, endIndex) {
   if(startIndex < 0 || startIndex > array.length - 1) {
     throw new Error('Invalid startIndex value'); 
@@ -24,7 +24,7 @@ exporter.getRandomNumberInRangeSync = function(array, count, startIndex, endInde
     array[endIndex] = temp;
 
     // Push the last element into the resultList
-    resultList.push(temp)
+    resultList.push(temp);
 
     /* Ignore the last element and find next random
      * element from the remaining         
@@ -34,6 +34,7 @@ exporter.getRandomNumberInRangeSync = function(array, count, startIndex, endInde
   }
   return resultList;
 };
+
 exporter.getRandomNumberInRange = function(array, count, startIndex, endIndex, callback) {
   var resultList = [];
   try{
