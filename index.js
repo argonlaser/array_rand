@@ -1,11 +1,11 @@
-var exporter = {}
+var exporter = {};
 
-var chooseRandomNumer = function(startindex, endIndex){
+var chooseRandomNumer = function (startindex, endIndex) {
   return Math.floor(Math.random() * (startindex - endIndex)) + endIndex;
 }
 
-exporter.getRandomNumberInRangeSync = function(array, count, startIndex, endIndex) {
-  if(startIndex < 0 || startIndex > array.length - 1) {
+exporter.getRandomNumberInRangeSync = function (array, count, startIndex, endIndex) {
+  if (startIndex < 0 || startIndex > array.length - 1) {
     throw new Error('Invalid startIndex value'); 
   }
   if (endIndex < 0 || endIndex > array.length - 1) {
@@ -16,7 +16,7 @@ exporter.getRandomNumberInRangeSync = function(array, count, startIndex, endInde
   }
   var resultList = [];
   var temp, randomIndex;
-  while(count > 0 && startIndex <= endIndex) {
+  while (count > 0 && startIndex <= endIndex) {
     randomIndex = chooseRandomNumer(startIndex, endIndex);
     // Swap the last and the current element
     temp = array[randomIndex];
@@ -35,10 +35,10 @@ exporter.getRandomNumberInRangeSync = function(array, count, startIndex, endInde
   return resultList;
 };
 
-exporter.getRandomNumberInRange = function(array, count, startIndex, endIndex, callback) {
+exporter.getRandomNumberInRange = function (array, count, startIndex, endIndex, callback) {
   var resultList = [];
-  try{
-    resultList = exporter.getRandomNumberInRangeSync(arr, count, startindex, endIndex);
+  try {
+    resultList = exporter.getRandomNumberInRangeSync(arr, count, startIndex, endIndex);
     callback(null, resultList);
   }
   catch(err) {
