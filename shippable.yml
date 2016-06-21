@@ -1,0 +1,9 @@
+language: node_js
+
+version:
+  - 0.12
+
+build:
+  ci:
+    - npm install -g mocha
+    - mocha test.js
