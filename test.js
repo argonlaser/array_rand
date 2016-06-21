@@ -23,7 +23,7 @@ describe('getRandomNumberInRangeSync()', function () {
   });
 });
 
-describe('getRandomNumberInRangeSync()', function () {
+describe('getRandomNumberInRange()', function () {
   it('should handle empty array', function (done) {
       array_rand.getRandomNumberInRange([],0,0,0, function(err, ele) {
         if (err && ele.length === 0)
