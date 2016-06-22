@@ -5,8 +5,11 @@ var chooseRandomNumer = function (startindex, endIndex) {
 }
 
 exporter.getRandomNumberInRangeSync = function (array, count, startIndex, endIndex) {
+  if (Array.isArray(array) == false) {
+    throw new Error('Invalid array object');
+  }
   if (startIndex < 0 || startIndex > array.length - 1) {
-    throw new Error('Invalid startIndex value'); 
+    throw new Error('Invalid startIndex value');
   }
   if (endIndex < 0 || endIndex > array.length - 1) {
     throw new Error('Invalid endIndex value');
