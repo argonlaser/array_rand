@@ -8,21 +8,28 @@ npm install array_rand
 
 # Functions
 The array_rand module has two versions of the functions :
-<b><h5>1)Async version</h5></b>
+<h5>1)Async version</h5>
+```
  getRandomObjectsInRange(array, count, startIndex, endIndex)
-<b><h5>2)Sync version</h5></b>
- getRandomObjectsInRangeSync(array, count, startIndex, endIndex)
+```
  
+<h5>2)Sync version</h5>
+```
+getRandomObjectsInRangeSync(array, count, startIndex, endIndex)
+ ```
+ where
+ ```
  array - The array used
  count - The count of random objects that you need from the array
  startIndex - The starting index of the array
  endIndex - The ending index of the array
- 
- #Usage
- 
+ ```
+ # Usage
+```
 var array_rand = require('array_rand');
 var arr = [1,2,3,4,5,6];
 var result = array_rand.getRandomObjectsInRange(arr,3,1,5);
 var resultSync = array_rand.getRandomObjectsInRangeSync(arr,3,1,5);
 // Results any three elements from the array <b>arr</b> in the given range
 
+```
