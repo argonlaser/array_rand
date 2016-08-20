@@ -24,7 +24,7 @@ getRandomObjectsInRangeSync(array, count, startIndex, endIndex)
  startIndex - The starting index of the array
  endIndex - The ending index of the array
  ```
- # Usage
+# Usage
 ```
 var array_rand = require('array_rand');
 var arr = [1,2,3,4,5,6];
