@@ -8,9 +8,9 @@ npm install array_rand
 
 # Functions
 The array_rand module has two versions of the functions :
-<h5>1)Async version</h5>
+<b><h5>1)Async version</h5></b>
  getRandomObjectsInRange(array, count, startIndex, endIndex)
-<h5>2)Sync version</h5>
+<b><h5>2)Sync version</h5></b>
  getRandomObjectsInRangeSync(array, count, startIndex, endIndex)
  
  array - The array used
@@ -22,6 +22,7 @@ The array_rand module has two versions of the functions :
  
 var array_rand = require('array_rand');
 var arr = [1,2,3,4,5,6];
-var result = array_rand.getRandomObjectsInRange(arr,3,0,arr.length);
-// Results any three elements from arr randomly
+var result = array_rand.getRandomObjectsInRange(arr,3,1,5);
+var resultSync = array_rand.getRandomObjectsInRangeSync(arr,3,1,5);
+// Results any three elements from the array <b>arr</b> in the given range
 
