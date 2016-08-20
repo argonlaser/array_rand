@@ -15,7 +15,7 @@ The array_rand module has two versions of the functions :
  
 <h5>2)Sync version</h5>
 ```
-getRandomObjectsInRangeSync(array, count, startIndex, endIndex)
+getRandomObjectsInRangeSync(array, count, startIndex, endIndex, callback)
  ```
  where
  ```
@@ -28,8 +28,10 @@ getRandomObjectsInRangeSync(array, count, startIndex, endIndex)
 ```
 var array_rand = require('array_rand');
 var arr = [1,2,3,4,5,6];
-var result = array_rand.getRandomObjectsInRange(arr,3,1,5);
-var resultSync = array_rand.getRandomObjectsInRangeSync(arr,3,1,5);
+var result = array_rand.getRandomObjectsInRange(arr, 3, 1, 5);
+array_rand.getRandomObjectsInRangeSync(arr, 3, 1, 5, function(err, resultSync) {
+  // Do operation on resultSync
+});
 // Results any three elements from the array <b>arr</b> in the given range
 
 ```
