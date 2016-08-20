@@ -49,4 +49,4 @@ exporter.getRandomNumberInRange = function (array, count, startIndex, endIndex, 
   }
 };
 
-module.exports = exporter
+module.exports = exporter;
