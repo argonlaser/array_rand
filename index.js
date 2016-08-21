@@ -4,7 +4,7 @@ var chooseRandomNumer = function (startindex, endIndex) {
   return Math.floor(Math.random() * (startindex - endIndex)) + endIndex;
 }
 
-exporter.getRandomNumberInRangeSync = function (array, count, startIndex, endIndex) {
+exporter.getRandomObjectsInRangeSync = function (array, count, startIndex, endIndex) {
   if (Array.isArray(array) == false) {
     throw new Error('Invalid array object');
   }
@@ -38,10 +38,10 @@ exporter.getRandomNumberInRangeSync = function (array, count, startIndex, endInd
   return resultList;
 };
 
-exporter.getRandomNumberInRange = function (array, count, startIndex, endIndex, callback) {
+exporter.getRandomObjectsInRange = function (array, count, startIndex, endIndex, callback) {
   var resultList = [];
   try {
-    resultList = exporter.getRandomNumberInRangeSync(arr, count, startIndex, endIndex);
+    resultList = exporter.getRandomObjectsInRangeSync(arr, count, startIndex, endIndex);
     callback(null, resultList);
   }
   catch(err) {
