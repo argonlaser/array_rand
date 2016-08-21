@@ -7,15 +7,15 @@ describe('Library Checks', function () {
   });
 
   it('should have required lib functions', function () {
-    assert.ok(typeof(array_rand.getRandomNumberInRangeSync) === 'function');
-    assert.ok(typeof(array_rand.getRandomNumberInRange) === 'function');
+    assert.ok(typeof(array_rand.getRandomObjectsInRangeSync) === 'function');
+    assert.ok(typeof(array_rand.getRandomObjectsInRange) === 'function');
   });
 });
 
-describe('getRandomNumberInRangeSync()', function () {
+describe('getRandomObjectsInRangeSync()', function () {
   it('should handle empty array', function () {
     try {
-      var num = array_rand.getRandomNumberInRangeSync([],0,0,0);
+      var num = array_rand.getRandomObjectsInRangeSync([],0,0,0);
     }
     catch(err) {
       assert.ok(!!err);
@@ -23,9 +23,9 @@ describe('getRandomNumberInRangeSync()', function () {
   });
 });
 
-describe('getRandomNumberInRange()', function () {
+describe('getRandomObjectsInRange()', function () {
   it('should handle empty array', function (done) {
-      array_rand.getRandomNumberInRange([],0,0,0, function(err, ele) {
+      array_rand.getRandomObjectsInRange([],0,0,0, function(err, ele) {
         if (err && ele.length === 0)
           done();
         else
