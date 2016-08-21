@@ -1,6 +1,6 @@
 {
   "name": "array_rand",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns the specified number of random elements from the array.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/technofinder/array_rand.git"
+    "url": "git+https://github.com/argonlaser/array_rand.git"
   },
   "keywords": [
     "random",
@@ -20,7 +20,7 @@
   "author": "Venkata Krishna <vkvenkat94@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/technofinder/array_rand/issues"
+    "url": "https://github.com/argonlaser/array_rand/issues"
   },
-  "homepage": "https://github.com/technofinder/array_rand#readme"
+  "homepage": "https://github.com/argonlaser/array_rand#readme"
 }
