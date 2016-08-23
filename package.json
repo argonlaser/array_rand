@@ -1,6 +1,6 @@
 {
   "name": "array_rand",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Returns the specified number of random elements from the array.",
   "main": "index.js",
   "scripts": {
