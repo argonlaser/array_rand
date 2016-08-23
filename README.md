@@ -34,6 +34,6 @@ var result = array_rand.getRandomObjectsInRangeSync(arr, 3, 1, 5);
 array_rand.getRandomObjectsInRange(arr, 3, 1, 5, function(err, result) {
   // Do operation on result
 });
-// Results any three elements from the array <b>arr</b> in the given range
+// Results any three elements from the array "arr" in the given range
 
 ```
