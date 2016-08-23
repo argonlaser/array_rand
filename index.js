@@ -41,7 +41,7 @@ exporter.getRandomObjectsInRangeSync = function (array, count, startIndex, endIn
 exporter.getRandomObjectsInRange = function (array, count, startIndex, endIndex, callback) {
   var resultList = [];
   try {
-    resultList = exporter.getRandomObjectsInRangeSync(arr, count, startIndex, endIndex);
+    resultList = exporter.getRandomObjectsInRangeSync(array, count, startIndex, endIndex);
     callback(null, resultList);
   }
   catch(err) {
