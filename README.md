@@ -4,23 +4,23 @@ Returns specified number of random objects from the array. Given an array, this 
 
 [![Run Status](https://api.shippable.com/projects/57b87f991419e20f001a4267/badge?branch=master)](https://app.shippable.com/projects/57b87f991419e20f001a4267)
 
-# Installing
+## Installing
 
 ```bash
 npm install array_rand
 ```
 
-# Functions
+## Functions
 
 The array_rand module has two versions of the functions :
 
-## Async version
+### Async version
 
 ```javascript
 getRandomObjectsInRange(array, count, startIndex, endIndex, callback)
 ```
  
-## Sync version
+### Sync version
 
 ```javascript
 getRandomObjectsInRangeSync(array, count, startIndex, endIndex)
@@ -35,7 +35,7 @@ startIndex - The starting index of the array
 endIndex - The ending index of the array
 ```
 
-# Usage
+## Usage
 
 ```javascript
 var array_rand = require('array_rand');
